@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fafafa;
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Roboto';
+}
+
+main {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 720px;
+  height: 100%;
+}
+
+.FormContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+
+  background: #FFF;
+  border: 1px solid #ccc;
+  padding: 32px 32px 16px;
+}
+
+.FormContainer img {
+  width: 180px;
+} 
+
+.FormContainer form input{
+  margin-top: 32px;
+  padding: 12px;
+  color: #000;
+  width: 100%;
+  background-color: #fafafa;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+
+.FormContainer form input::placeholder{
+  color: #8e8e8e;
+}
+
+.FormContainer form input + input{
+  margin-top: 6px;
+}
+
+.FormContainer button {
+  background: #b2dffc;
+  color: #fff;
+  font-weight: bold;
+  border: 1px solid #ccc;
+  height: 2rem;
+  width: 100%;
+  border-radius: 2px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.FormContainer span {
+  color: #8e8e8e;
+  font-size: 14px;
+  font-weight: bold;
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+/* .FormContainer span::after {
+  position: absolute;
+  content: '';
+  height: 1px;
+  background: #ccc;
+  top: 50%;
+  width: 50%;
+} */
+
+.FormContainer span::before {
+  position: absolute;
+  content: '';
+  height: 1px;
+  background: #ccc;
+  bottom: 50%;  
+  right: 50%;
+  width: 43%;
+  margin-right: 20px;
+}
+
+.FormContainer span::after {
+  position: absolute;
+  content: '';
+  height: 1px;
+  background: #ccc;
+  top: 50%; 
+  left: 50%;
+  width: 43%;
+  margin-left: 20px;
+}
+
+
+
+.FormContainer > a {
+  font-weight: 400;
+  text-decoration: none;
+  font-size: 12px;
+  color: #385185;
+  margin-top: 16px;
+}
+
+.LinkFacebook {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.LinkFacebook a{
+  text-decoration: none;
+  font-weight: 700;
+  color: #385185;
+}
+
+.LinkFacebook img{
+  width: 16px;
+  margin-right: 10px;
+}
+
+.AccountContainer {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  height: 64px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.AccountContainer a {
+  color: #2da9da;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.StoresAppContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.StoresAppContainer span {
+  margin: 20px 0;
+  font-weight: 300;
+}
+
+.storesApp img{
+  width: 130px;
+}
+
+
+@media only screen and (max-width: 800px) {
+  .Container > img {
+    display: none;
+  }
+}
